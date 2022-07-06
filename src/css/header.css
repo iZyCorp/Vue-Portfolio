@@ -1,0 +1,56 @@
+#dark_nav ul li a {
+    color: #f4f4f4;
+}
+
+#header_menu {
+    background-color: #323236;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    position: relative;
+    box-shadow: 0 1px 6px black;
+}
+
+#second_menu {
+    padding: 17px;
+    background-color: #27282c;
+    box-shadow: 0 1px 6px black;
+    font-size: 13px;
+}
+
+
+#header_logo {
+    margin-left: 3%;
+    width: 9%;
+    float: left;
+    alignment: center;
+}
+
+nav {
+    text-align: right;
+    padding-right: 8%;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+li a {
+    margin-left: 35px;
+}
+
+a:link{
+    text-decoration: none!important;
+}
+
+/* LOGO animated */
+.grow-enter-active,
+.grow-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.grow-enter-from,
+.grow-leave-to {
+    opacity: 0;
+}

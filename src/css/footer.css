@@ -1,0 +1,25 @@
+footer {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #272a2c;
+    width: 100%;
+    bottom: 0;
+    margin-top:auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+a {
+    margin-left: 60px;
+}
+
+#link {
+    float: left;
+}
+
+#copyright {
+    float: right;
+    margin-left: 60px;
+    color: #f4f4f4;
+}

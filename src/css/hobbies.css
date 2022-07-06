@@ -1,0 +1,21 @@
+#hobbies {
+    columns: 350px 3;
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+    column-gap: 0;
+    column-rule: 1px solid #1a242f;
+    margin-bottom: 50px;
+}
+
+.hb {
+    grid-area: auto;
+    display: table-cell;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+}
+
+h1, figcaption {
+    text-align: center;
+    padding-top: 20px;
+}

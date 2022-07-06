@@ -1,0 +1,45 @@
+#img {
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+#title {
+  alignment: center;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+
+}
+
+figure {
+  text-align: center;
+  alignment: center;
+}
+
+.lang {
+  grid-area: auto;
+  display: table-cell;
+  width: 30%;
+  padding: 30px;
+}
+
+figcaption {
+  margin-top: 30px;
+}
+
+.languages {
+  columns: 350px 3;
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+  column-gap: 0;
+  column-rule: 1px solid #1a242f;
+  margin-bottom: 50px;
+}
+
+#reste {
+  text-align: center;
+}
+
+
+
+

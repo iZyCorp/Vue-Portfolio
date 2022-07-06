@@ -1,0 +1,23 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+label {
+    margin-top: 30px;
+}
+
+.input-form {
+    margin-bottom: 20px;
+}
+
+#textbox {
+    height: 100px;
+}
+
+label, input {
+    text-align: center;
+}

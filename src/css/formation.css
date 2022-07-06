@@ -1,0 +1,18 @@
+#introduction {
+    display: block;
+    alignment: center;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.common-section h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.common-section p {
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+.content-section h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.content-section p {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.content-section {
+    padding-bottom: 50px;
+}
+
+.description {
+    margin-left: 30%;
+    margin-right: 30%;
+}
