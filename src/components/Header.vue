@@ -1,23 +1,28 @@
 <template>
   <header>
     <section id="header_menu">
-      <img src="../assets/logo.png" alt="iZyCorp" id = "header_logo">
+      <img src="../assets/logo.png" alt="iZyCorp" id="header_logo" class="unselectable">
 
       <nav id="dark_nav">
         <ul>
-          <li><a href="#/">ACCUEIL</a></li>
-          <li><a href="#/projects">PROJETS</a></li>
-          <li><a href="#/contact">CONTACT</a></li>
-          <li><a href="https://github.com/iZyCorp">GITHUB</a></li>
+          <router-link to="/" id="router-link">ACCUEIL</router-link>
+          <router-link to="/projects" id="router-link">PROJETS</router-link>
+          <router-link to="/contact" id="router-link">CONTACT</router-link>
+          <a href="https://github.com/iZyCorp" id="router-link">GITHUB</a>
         </ul>
       </nav>
     </section>
 
     <section id="second_menu">
-      <nav>
-        <li><a href="#/formation">MA FORMATION</a></li>
-        <li><a href="#/skills">MES COMPETENCES</a></li>
-        <li><a href="#/hobbies">MES LOISIR</a></li>
+      <nav v-if="$route.path === '/' || $route.path === '/formation' || $route.path === '/skills' || $route.path === '/hobbies'">
+        <router-link to="/formation" id="router-link">MA FORMATION</router-link>
+        <router-link to="/skills" id="router-link">MES COMPETENCES</router-link>
+        <router-link to="/hobbies" id="router-link">MES LOISIR</router-link>
+      </nav>
+
+      <nav v-else-if="$route.path === '/projects'">
+        <a href="#personal" id="router-link">REALISATION PERSONNEL</a>
+        <a href="#internship" id="router-link">REALISATION EN STAGE</a>
       </nav>
     </section>
   </header>
@@ -29,5 +34,4 @@ export default {
 }
 </script>
 
-<style scoped src="../css/header.css">
-</style>
+<style scoped src="../css/header.css" />

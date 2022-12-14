@@ -3,70 +3,28 @@
     display: block;
 }
 
-body {
-    background: #a9b0b6;
-}
-
-#big_text {
-    float: none;
-    font-size: 35px;
-    text-align: center;
-}
-
 .txt-rotate {
     float: none;
     font-size: 35px;
     color: rgba(255,0,20,0.64);
     text-align: center;
 }
-
-#back_img {
-    position: absolute;
-    margin-top: auto;
-    opacity: 0.8;
-    filter: brightness(70%);
-    object-fit: cover;
-}
+/* make back-image at the same x and y than the introduction text */
 
 #back-image {
     position: absolute;
+    filter: brightness(40%) blur(200px);
+    margin-left: 100px;
     left: 0;
     right: 0;
-    top: 0;
-    z-index: 0;
-    opacity: 0.4;
+    opacity: 0.3;
+    pointer-events: none;
 }
 
 #introduction {
-    background-image: url("../assets/back_img.png");
     box-shadow: 0 -1px 2px #272a2c;
 }
 
-.common-section-title {
-    color: #e8e6e3;
-    font-size: 35px;
-    text-align: center;
-}
-
-.common-section-low-title {
-    color: #e8e6e3;
-    padding-top: 10px;
-    padding-right: 50%;
-    margin-left: 50px;
-    width: 50%;
-    text-align: left;
-    line-height: 1.4;
-}
-
-.common-section-paragraph {
-    font-size: 20px;
-    color: #f4f4f4;
-    padding-top: 10px;
-    width: 50%;
-    text-align: left;
-    line-height: 1.4;
-    margin-left: 50px;
-}
 
 #illus1 {
     position: relative;
@@ -74,6 +32,8 @@ body {
     display: inline;
     width: 65%;
     box-shadow: 0 2px 6px black;
+    margin: 20px;
+    pointer-events: none;
 }
 
 #introduction {
@@ -84,12 +44,19 @@ body {
     margin-bottom: 50px;
 }
 
-.learn-more {
-    background-color: #4497FF;
+#index-common-section {
+    width: 50%;
+}
+
+/* BUTTON */
+#learn-more-div {
+    margin-top: 50px;
+    background-color: #9d76cc;
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     font-size: 18px;
     padding: 15px;
     margin-left: 50px;
+    width: 115px;
 }

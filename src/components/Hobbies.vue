@@ -34,5 +34,4 @@ export default {
 }
 </script>
 
-<style scoped src="../css/hobbies.css">
-</style>
+<style scoped src="../css/hobbies.css"/>

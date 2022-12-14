@@ -16,3 +16,16 @@
     padding-left: 50px;
     text-align: center;
 }
+
+#formation-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#formation-sec h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

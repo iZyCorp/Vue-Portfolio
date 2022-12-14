@@ -40,6 +40,27 @@ figcaption {
   text-align: center;
 }
 
+#skills-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#skills-section-right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#skills-section-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
 
 
 

@@ -3,7 +3,7 @@
 }
 
 #header_menu {
-    background-color: #323236;
+    background-color: #272a2c;
     padding: 10px;
     top: 0;
     right: 0;
@@ -13,7 +13,7 @@
 
 #second_menu {
     padding: 17px;
-    background-color: #27282c;
+    background-color: #1f2223;
     box-shadow: 0 1px 6px black;
     font-size: 13px;
 }
@@ -24,6 +24,7 @@
     width: 9%;
     float: left;
     alignment: center;
+    pointer-events: none;
 }
 
 nav {
@@ -31,13 +32,18 @@ nav {
     padding-right: 8%;
 }
 
-li {
+#router-link {
     display: inline;
     padding: 10px;
 }
 
-li a {
+#router-link {
     margin-left: 35px;
+}
+
+#router-link:hover {
+    color: #a27f8c;
+    transition: 0.5s;
 }
 
 a:link{

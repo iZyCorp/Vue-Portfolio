@@ -1,6 +1,14 @@
 <template>
   <Header/>
-  <component :is="currentView"/>
+
+  <router-view v-slot="{Component}">
+    <transition name="slide-fade" mode="out-in">
+      <div :key="$route.path">
+        <component :is="Component" />
+      </div>
+    </transition>
+  </router-view>
+
   <Footer/>
 </template>
 
@@ -9,52 +17,21 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// Page components
-import NotFound from "@/components/NotFound";
-import Index from './components/Index.vue'
-import Skills from './components/Skills.vue'
-import Hobbies from "@/components/Hobbies";
-import Formation from "@/components/Formation";
-import Contact from "@/components/Contact";
-import Projects from "@/components/Projects";
-
-// routes
-const routes = {
-  '/': Index,
-  '/skills': Skills,
-  '/hobbies': Hobbies,
-  '/formation': Formation,
-  '/contact': Contact,
-  '/projects': Projects
-}
-
 export default {
   name: 'App',
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to) {
+        document.title = to.meta.title || 'Sapet Arnaud - Portfolio';
+      }
+    },
+  },
   components: {
     Header,
-    Footer,
-
-    NotFound,
-    Index,
-    Skills
-  },
-  data() {
-    return {
-      currentPath: window.location.hash
-    }
-  },
-  computed: {
-    currentView() {
-      return routes[this.currentPath.slice(1) || '/'] || NotFound
-    }
-  },
-  mounted() {
-    window.addEventListener('hashchange', () => {
-      this.currentPath = window.location.hash
-    })
+    Footer
   }
 }
 </script>
 
-<style lang="css" src="./css/common.css">
-</style>
+<style lang="css" src="./css/common.css" />

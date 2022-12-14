@@ -1,26 +1,40 @@
 <template>
-  <form action="inc/traitContact.php" method="post" name="contact" class="contact-form">
+  <section class="common-top-title">
+    <p class="big_text">Me contacter</p>
+  </section>
 
-    <label for="name">Nom :</label>
-    <input type="text" name="name" value="" class="input-form">
+  <section class="common-section">
 
-    <br>
+    <div id="contact-section">
+      <section id="contact-left-column">
+        <h1>Où me contacter ?</h1>
+        <p>Lorem ipsun dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec luctus aliquet, nunc nisl aliquet nisl, eu aliquet nunc nisl eu nunc. Sed euismod, nisl nec luctus aliquet, nunc nisl aliquet nisl, eu aliquet nunc nisl eu nunc.</p>
+      </section>
 
-    <label for="surname">Prénom :</label>
-    <input type="text" name="surname" value="" class="input-form">
+      <hr class="vertical-hr">
 
-    <br>
-
-    <label for="email">Email :</label>
-    <input type="text" name="email" value="" class="input-form">
-
-    <input type="text" name="content" value="" class="input-form" id="textbox">
-
-    <br>
-
-    <input type="submit" value="Envoyer" class="input-form"/>
-
-  </form>
+      <section id="contact-right-column">
+        <table class="ordered-table">
+          <tr>
+            <td>Mails</td>
+            <td><a href="mailto:a.sapet@lyon.ort.asso.fr">a.sapet@lyon.ort.asso.fr</a></td>
+          </tr>
+          <tr>
+            <td>Code postal</td>
+            <td>75000</td>
+          </tr>
+          <tr>
+            <td>Ville</td>
+            <td>Paris</td>
+          </tr>
+          <tr>
+            <td>Téléphone</td>
+            <td>06 00 00 00 00</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -29,4 +43,4 @@ export default {
 }
 </script>
 
-<style scoped src="../css/contact.css"></style>
+<style scoped src="../css/contact.css"/>

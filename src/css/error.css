@@ -1,3 +1,12 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
 .error-title {
     font-size: 100px;
 }
@@ -5,4 +14,6 @@
 .error-desc {
     font-size: 20px;
     text-align: center;
+    margin-bottom: 20px;
+    color: #e0dbda;
 }

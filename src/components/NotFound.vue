@@ -1,5 +1,5 @@
 <template>
-  <section id="error-404">
+  <section class="error">
     <h1 class="error-title">404</h1>
     <p class="error-desc">La page que vous souhaitez afficher n'existe pas ou est indisponible</p>
   </section>
@@ -12,5 +12,4 @@ export default {
 }
 </script>
 
-<style scoped src="../css/error.css">
-</style>
+<style scoped src="../css/error.css"/>
