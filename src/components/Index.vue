@@ -1,7 +1,7 @@
 <template>
   <section id="typing_word">
     <p class="big_text">Je travaille avec,
-    <vue-writer :array="['Java','Ruby','Kotlin','PHP','Intellij IDEA']" :typeSpeed="70" />
+    <vue-writer :array="['Java','Ruby','Kotlin','PHP', 'C#','Intellij IDEA']" :typeSpeed="70" />
     </p>
   </section>
 
@@ -35,7 +35,6 @@ import VueWriter from 'vue-writer'
 export default {
   components: { VueWriter },
   name: "index_page"
-
 }
 </script>
 

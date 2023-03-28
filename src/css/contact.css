@@ -21,3 +21,9 @@ label {
 label, input {
     text-align: center;
 }
+
+#contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

@@ -1,8 +1,11 @@
 <template>
-  <section class="common-top-title">
+  <section class="common-top-title" id="top">
     <p class="big_text">Les projets</p>
   </section>
 
+  <!--
+  INTRODUCTION
+  -->
   <section class="common-section">
     <h1 class="common-section-title">Introduction</h1>
     <p class="common-section-paragraph">
@@ -11,49 +14,106 @@
     </p>
   </section>
 
-  <!-- WATERMELON -->
-  <section class="common-section-2">
+  <!--
+  PROJETS
+  PERSO
+  -->
+  <section class="common-section-2" id="personal">
     <p class="big_text">Projets personnels</p>
-    <h3 class="common-section-low-title" style="text-decoration: underline;">WATERMELON BOT</h3>
-    <div id="project-row">
-      <section>
-        <h4 class="common-section-low-title">INTRODUCTION</h4>
-        <p class="common-section-paragraph" id="project-watermelon-paragraph">
-          Watermelon Bot est un bot discord, développé en <span style="color: #fa9e9e">Java</span> avec la librairie <span style="color: #fa9e9e">JDA</span>. Il est actuellement encore en développement mais est déjà disponible via le site officiel <a href="https://watermelonbot.xyz" target="_blank"><span style="color: #75b1ff">https://watermelonbot.xyz</span></a>.
-        </p>
-        <h4 class="common-section-low-title">FONCTIONNALITÉ</h4>
-        <p class="common-section-paragraph" id="project-watermelon-paragraph">
-          Ce bot discord à pour but de faciliter la gestion d'un serveur discord, en proposant des commandes d'aide à la modération,
-          des commandes propices au divertissement et un tout nouveau système de sécurité au dessus de celui proposé par discord qui
-          permet d'avoir un contrôle accru sur tout les membres du serveur.
-        </p>
-      </section>
-      <img src="../assets/myprojects/watermelon_m.png" alt="watermelon" id="illus-watermelon" class="unselectable" draggable="false">
-    </div>
+
+    <section id="watermelon-project">
+      <h3 class="common-section-low-title" style="text-decoration: underline;">WATERMELON BOT</h3>
+      <div id="project-row">
+        <section>
+          <h4 class="common-section-low-title">INTRODUCTION</h4>
+          <p class="common-section-paragraph" id="project-watermelon-paragraph">
+            Watermelon Bot est un bot discord, développé en <span style="color: #fa9e9e">Java</span> avec la librairie <span style="color: #fa9e9e">JDA</span>. Il est actuellement encore en développement mais est déjà disponible via le site officiel <a href="https://watermelonbot.xyz" target="_blank"><span style="color: #75b1ff">https://watermelonbot.xyz</span></a>.
+          </p>
+          <h4 class="common-section-low-title">FONCTIONNALITÉ</h4>
+          <p class="common-section-paragraph" id="project-watermelon-paragraph">
+            Ce bot discord à pour but de faciliter la gestion d'un serveur discord, en proposant des commandes d'aide à la modération,
+            des commandes propices au divertissement et un tout nouveau système de sécurité au dessus de celui proposé par discord qui
+            permet d'avoir un contrôle accru sur tout les membres du serveur.
+          </p>
+        </section>
+        <img src="../assets/myprojects/watermelon_m.png" alt="watermelon" id="illus-watermelon" class="unselectable" draggable="false">
+      </div>
+    </section>
+
 
   <!-- MooN -->
-    <h3 class="common-section-low-title" style="text-decoration: underline;">MOON</h3>
-    <div id="project-row">
-      <section>
-        <h4 class="common-section-low-title">INTRODUCTION</h4>
-        <p class="common-section-paragraph" >
-          MooN API est une API développé en <span style="color: #fa9e9e">Java</span>, il s'agit d'un wrapper de l'API officiel de Call Of Duty. Elle est actuellement encore en développement mais est déjà exploitable, les sources se trouvent sur Github.
-        </p>
-        <h4 class="common-section-low-title">FUTUR</h4>
-        <p class="common-section-paragraph">
-          Cette API permet de récupérer et d'exploiter simplement des données récupéré depuis le site officiel de Call Of Duty. Elle a été développé dans le cadre d'une requête prononcé par le Youtubeur français <a href="https://www.youtube.com/c/otherGun/videos"><span style="color: #89a969">OtherGun</span></a>
-          qui souhaitait exploiter les données de 50 000 000 de comptes. Aujourd'hui cette API est voué à évolué pour un plus gros projet nommé MooN.
-        </p>
-      </section>
+    <section id="moon-project">
+      <h3 class="common-section-low-title" style="text-decoration: underline;">MOON</h3>
+        <div id="project-row">
+
+          <section>
+            <h4 class="common-section-low-title">INTRODUCTION</h4>
+            <p class="common-section-paragraph" >
+              MooN est une library développé en <span style="color: #fa9e9e">Java</span>, il s'agit d'un wrapper de l'API officiel de Call Of Duty. Elle est actuellement encore en développement mais est déjà exploitable, les sources se trouvent sur Github.
+            </p>
+            <h4 class="common-section-low-title">FUTUR</h4>
+            <p class="common-section-paragraph">
+              Cette API permet de récupérer et d'exploiter simplement des données récupéré depuis le site officiel de Call Of Duty. Elle a été développé dans le cadre d'une requête prononcé par le Youtubeur français <a href="https://www.youtube.com/c/otherGun/videos"><span style="color: #89a969">OtherGun</span></a>
+              qui souhaitait exploiter les données de 50 000 000 de comptes. Aujourd'hui cette API est voué à évolué pour un plus gros projet nommé MooN.
+            </p>
+          </section>
 
       <img src="../assets/myprojects/MooN.png" alt="moon" id="illus-watermelon" class="unselectable" draggable="false">
     </div>
+    </section>
+
   </section>
+
+  <!--
+   STAGE
+    -->
+  <section class="common-section-2" id="stage">
+
+    <p class="big_text">Projets en stage</p>
+
+    <!-- Chat -->
+    <section id="moon-project">
+      <h3 class="common-section-low-title" style="text-decoration: underline;">CHAT POUR EASY2DEV</h3>
+      <div id="project-row">
+
+        <section>
+          <h4 class="common-section-low-title">INTRODUCTION</h4>
+          <p class="common-section-paragraph" >
+            Dans le cadre de mon stage en 2eme année de BTS SIO, j'ai eu l'opportunité de réalisé en <span style="color: #e09efa">PhP</span>, un chat pour l'ERP de la société Easy2Dev.
+          </p>
+          <h4 class="common-section-low-title">OBJECTIFS ET FONCTIONNALITÉS</h4>
+          <p class="common-section-paragraph">
+           Ce chat à pour but d'aider l'entreprise à s'émanciper des autres outils de communication tel que Skype ou Teams. Il permet de discuter en temps réel avec les autres utilisateurs connecté à l'ERP, de partager des fichiers et de créer des salons de discussion.
+            Pour en savoir plus sur ce projet, rendez-vous sur mon <a href=""><span style="color: #89a969">rapport de stage</span></a>.
+          </p>
+        </section>
+
+        <img src="../assets/myprojects/chat.png" alt="moon" id="illus-watermelon" class="unselectable" draggable="false">
+      </div>
+    </section>
+  </section>
+
+  <!--
+  RAPPORT DE STAGE
+  -->
+  <section class="common-section" id="stage-report">
+    <p class="common-section-paragraph">
+      Télécharger mon <a href="https://izycorporation.fr/attachments/RDS-Easy2dev.pdf" target="_blank"><span style="color: #89a969">rapport de stage</span> Easy2Dev</a>
+    </p>
+
+    <img src="../assets/pdf.png" alt="back_img" id="illus-image" class="unselectable" draggable="false">
+
+    <p class="common-section-paragraph">
+      Télécharger mon <a href="https://izycorporation.fr/attachments/RDS-Brette.pdf" target="_blank"><span style="color: #a96969">rapport de stage</span> Brette Informatique</a>
+    </p>
+
+  </section>
+
 </template>
 
 <script>
 export default {
-  name: "Projects-Page"
+  name: "Projects-Page",
 }
 </script>
 

@@ -14,23 +14,30 @@
     </section>
 
     <section id="second_menu">
-      <nav v-if="$route.path === '/' || $route.path === '/formation' || $route.path === '/skills' || $route.path === '/hobbies'">
+      <nav v-if="$route.path === '/' || $route.path === '/formation' || $route.path === '/skills' || $route.path === '/hobbies' || $route.path === '/contact'">
         <router-link to="/formation" id="router-link">MA FORMATION</router-link>
         <router-link to="/skills" id="router-link">MES COMPETENCES</router-link>
-        <router-link to="/hobbies" id="router-link">MES LOISIR</router-link>
+        <router-link to="/hobbies" id="router-link">MES LOISIRS</router-link>
       </nav>
 
       <nav v-else-if="$route.path === '/projects'">
-        <a href="#personal" id="router-link">REALISATION PERSONNEL</a>
-        <a href="#internship" id="router-link">REALISATION EN STAGE</a>
+        <a @click="scrollToSection('personal')" id="router-link">REALISATION PERSONNEL</a>
+        <a @click="scrollToSection('stage')" id="router-link">REALISATION EN STAGE</a>
+        <a @click="scrollToSection('stage-report')" id="router-link">RAPPORTS</a>
       </nav>
+
     </section>
   </header>
 </template>
 
 <script>
 export default {
-  name: "Header-Include"
+  name: "Header-Include",
+  methods: {
+    scrollToSection(section) {
+      document.getElementById(section).scrollIntoView({behavior: "smooth"});
+    },
+  }
 }
 </script>
 

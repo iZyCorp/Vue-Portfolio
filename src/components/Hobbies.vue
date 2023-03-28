@@ -5,7 +5,7 @@
       <img src="../assets/pencil.png" id="img" width="130" alt="img">
       <h1>Dessin</h1>
       <figcaption>
-        Je passe la plus part de mon temps à dessiner ou à effectuer des travaux graphiques sur ordinateur pour un publique intéréssé.
+        Je passe beaucoup de temps à dessiner. J’ai toujours aimé dessiner des personnages et des paysages en noir et blanc. J'ai également réalisé des dessins pour un public intéressé.
       </figcaption>
     </figure>
 
@@ -21,7 +21,7 @@
       <img src="../assets/note.png" id="img" width="130" alt="img">
       <h1>Musique</h1>
       <figcaption>
-        La musique est aussi un de mes loisirs principal. Ayant effectué plusieurs années de musique étant jeune, j’ai toujours voulu réaliser mes propres musiques.
+        La musique est aussi un de mes loisirs principaux. Ayant effectué plusieurs années de musique étant jeune, j’ai toujours voulu réaliser mes propres musiques.
       </figcaption>
     </figure>
 

@@ -3,7 +3,7 @@ import Index from "@/components/Index";
 import Skills from '@/components/Skills';
 import Hobbies from "@/components/Hobbies";
 import Formation from "@/components/Formation";
-//import Contact from "@/components/Contact";
+import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 
 import NotFound from "@/components/NotFound";
@@ -18,9 +18,10 @@ const routes = [
     { path: '/skills', name: 'Skills', component: Skills, },
     { path: '/hobbies', name: 'Hobbies', component: Hobbies, },
     { path: '/formation', name: 'Formation', component: Formation, },
-    { path: '/contact', name: 'Contact', component: Maintenance, },
+    { path: '/contact', name: 'Contact', component: Contact, },
     { path: '/projects', name: 'Projects', component: Projects, },
 
+    { path: '/maintenance', name: 'Maintenance', component: Maintenance, },
     { path: '/NotFound', name: 'NotFound', component: NotFound, },
     { path: '/:pathMatch(.*)', component: NotFound },
     { path: '/:catchAll(.*)', component: NotFound },
