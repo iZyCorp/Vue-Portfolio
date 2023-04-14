@@ -26,9 +26,9 @@ jobs:
       - name: FTP Upload
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ env.FTP_HOST }}
-          port: ${{ env.FTP_PORT }}
-          username: ${{ env.FTP_USERNAME }}
-          password: ${{ env.FTP_PASSWORD }}
+          server: ${{ secrets.FTP_HOST }}
+          port: ${{ secrets.FTP_PORT }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist
           remote-dir: /
