@@ -40,3 +40,4 @@ jobs:
           host: sftp://${{ secrets.FTP_HOST }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          localDir: "dist"
