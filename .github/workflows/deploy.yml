@@ -1,4 +1,6 @@
+# Name of the workflow
 name: Build and deploy
+# Trigger the workflow on push request
 on:
   push:
     branches: [master]
@@ -33,7 +35,7 @@ jobs:
           name: dist
           path: dist
       - name: Sync files to hosting
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
           port: ${{ secrets.FTP_PORT }}
