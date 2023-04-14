@@ -1,43 +1,40 @@
-# Workflow name
-name: Deploy
-
-# Event for the workflow
+name: Build and deploy
 on:
-  # On push to master
   push:
-    branches:
-      - master
+    branches: [master]
+  workflow_dispatch:
 
-# List of jobs that will run in the workflow
 jobs:
-  # Job name
-  build-and-deploy:
-    # Operating system to run job on
+  build:
+    name: Build ⛏
     runs-on: ubuntu-latest
-    # List of steps that will run in the job
     steps:
-      # Step 1 - Checkout code
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      # Step 2 - Install dependencies
+      - name: Checkout repository
+        uses: actions/checkout@main
       - name: Install dependencies
-        run: npm install
-
-      # Step 3 - Build
-      - name: Build
+        run: npm ci
+      - name: Build dependencies
         run: npm run build
-
-      # Step 4 - Change working directory to "dist/"
-      - name: Change working directory to dist/
-        run: cd dist/
-
-      # Step 5 - FTP Upload
-      - name: FTP Upload
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      - name: Archive production artifact
+        uses: actions/upload-artifact@main
         with:
-          ftp-server: sftp://${{ secrets.FTP_HOST }}
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/
-          git-ftp-args: --insecure
+          name: dist
+          path: dist
+  deploy:
+    name: Deploy 🚀
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+      - name: Download artifact
+        uses: actions/download-artifact@main
+        with:
+          name: dist
+          path: dist
+      - name: Sync files to hosting
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.ftp_password }}
