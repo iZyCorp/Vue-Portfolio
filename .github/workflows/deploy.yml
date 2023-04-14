@@ -37,7 +37,7 @@ jobs:
       - name: Sync files to hosting
         uses: sebastianpopp/ftp-action@releases/v2
         with:
-          host: sftp://${{ secrets.FTP_HOST }}
+          host: ${{ secrets.FTP_HOST }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: "dist"
+          localDir: "./dist/"
