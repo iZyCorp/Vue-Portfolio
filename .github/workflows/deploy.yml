@@ -35,8 +35,7 @@ jobs:
       - name: Sync files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          protocol: ftps
-          server: sftp://${{ secrets.FTP_HOST }}
+          server: ${{ secrets.FTP_HOST }}
           port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
