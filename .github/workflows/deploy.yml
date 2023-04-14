@@ -25,6 +25,8 @@ jobs:
         run: npm run build
       - name: FTP Upload
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      - name: Set FTP protocol to explicit
+        run: echo "set ftp:ssl-allow no" >> ~/.netrc
         with:
           server: ${{ secrets.FTP_HOST }}
           port: ${{ secrets.FTP_PORT }}
