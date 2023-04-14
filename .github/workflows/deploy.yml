@@ -1,11 +1,13 @@
 # Workflow name
 name: Deploy
+
 # Event for the workflow
 on:
   # On push to master
   push:
     branches:
       - master
+
 # List of jobs that will run in the workflow
 jobs:
   # Job name
@@ -17,12 +19,20 @@ jobs:
       # Step 1 - Checkout code
       - name: Checkout code
         uses: actions/checkout@v2
-        # Step 2 - Install dependencies
+
+      # Step 2 - Install dependencies
       - name: Install dependencies
         run: npm install
-        # Step 3 - Build
+
+      # Step 3 - Build
       - name: Build
         run: npm run build
+
+      # Step 4 - Change working directory to "dist/"
+      - name: Change working directory to dist/
+        run: cd dist/
+
+      # Step 5 - FTP Upload
       - name: FTP Upload
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
