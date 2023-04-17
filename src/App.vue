@@ -1,10 +1,10 @@
 <template>
-  <Header/>
+  <Header v-bind:slide="slide"/>
 
   <router-view v-slot="{Component}">
     <transition name="slide-fade" mode="out-in">
       <div :key="$route.path">
-        <component :is="Component" />
+        <component :is="Component" v-bind:slide="slide"/>
       </div>
     </transition>
   </router-view>
@@ -30,7 +30,7 @@ export default {
   components: {
     Header,
     Footer
-  }
+  },
 }
 </script>
 

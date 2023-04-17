@@ -6,10 +6,15 @@ on:
     branches: [master]
   workflow_dispatch:
 
+# List of jobs
 jobs:
+  # Job name
   build:
+    # name in the status check
     name: Build ⛏
+    # Define on which OS to run the job
     runs-on: ubuntu-latest
+    # List of steps
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
@@ -22,10 +27,14 @@ jobs:
         with:
           name: dist
           path: dist
+  # Job name
   deploy:
+    # name in the status check
     name: Deploy 🚀
+    # Dependencies on other jobs
     needs: build
     runs-on: ubuntu-latest
+    # List of steps
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
