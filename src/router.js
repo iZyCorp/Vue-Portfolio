@@ -6,7 +6,7 @@ import Formation from "@/components/Formation";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 
-import EpreuveE4 from "@/components/e4/EpreuveE4.vue";
+import EpreuveE4 from "@/components/EpreuveE4.vue";
 
 import NotFound from "@/components/NotFound";
 import Maintenance from "@/components/Maintenance";
