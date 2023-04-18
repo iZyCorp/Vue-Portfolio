@@ -1,10 +1,10 @@
 <template>
-  <Header v-bind:slide="slide"/>
+  <Header/>
 
   <router-view v-slot="{Component}">
     <transition name="slide-fade" mode="out-in">
       <div :key="$route.path">
-        <component :is="Component" v-bind:slide="slide"/>
+        <component :is="Component"/>
       </div>
     </transition>
   </router-view>

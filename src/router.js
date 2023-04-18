@@ -6,8 +6,6 @@ import Formation from "@/components/Formation";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 
-import EpreuveE4 from "@/components/EpreuveE4.vue";
-
 import NotFound from "@/components/NotFound";
 import Maintenance from "@/components/Maintenance";
 
@@ -22,7 +20,6 @@ const routes = [
     { path: '/formation', name: 'Formation', component: Formation, },
     { path: '/contact', name: 'Contact', component: Contact, },
     { path: '/projects', name: 'Projects', component: Projects, },
-    { path: '/epreuve4', name: 'EpreuveE4', component: EpreuveE4 },
 
     { path: '/maintenance', name: 'Maintenance', component: Maintenance, },
     { path: '/NotFound', name: 'NotFound', component: NotFound, },
