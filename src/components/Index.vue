@@ -10,7 +10,7 @@
     <img src="../assets/back_img.png" alt="back_img" id="back-image" class="unselectable" draggable="false">
     <h1 class="common-section-title">Qui suis-je ?</h1>
     <p class="common-section-paragraph" id="index-common-section">
-      Actuellement en <span style="color: #bb6565"> BTS SIO (Service informatique aux organisations) </span>, je suis depuis longtemps, passionné par l'informatique notamment dans le domaine du <span style="color: #89a969">développement d'application</span> / <span style="color: #89a969">jeux-vidéos</span>.
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAActuellement en <span style="color: #bb6565"> BTS SIO (Service informatique aux organisations) </span>, je suis depuis longtemps, passionné par l'informatique notamment dans le domaine du <span style="color: #89a969">développement d'application</span> / <span style="color: #89a969">jeux-vidéos</span>.
     </p>
     <img src="../assets/exp.png" alt="illus1" id = "illus1" class="unselectable" draggable="false">
     <p class="common-section-paragraph" id="index-common-section">
