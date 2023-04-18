@@ -4,7 +4,6 @@ name: Build and deploy
 on:
   push:
     branches: [master]
-  workflow_dispatch:
 
 # List of jobs
 jobs:
@@ -16,12 +15,14 @@ jobs:
     runs-on: ubuntu-latest
     # List of steps
     steps:
+      # Clone le dépôt GitHub dans l'environnement d'exécution.
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Install dependencies
         run: npm ci
       - name: Build dependencies
         run: npm run build
+      # Utilise l'action "upload-artifact" pour archiver les fichiers de production. Compresse les fichiers.
       - name: Archive production artifact
         uses: actions/upload-artifact@main
         with:
@@ -36,8 +37,10 @@ jobs:
     runs-on: ubuntu-latest
     # List of steps
     steps:
+      # Clone le dépôt GitHub dans l'environnement d'exécution.
       - name: Checkout repository
         uses: actions/checkout@main
+      # Récupèration de l'archive de production
       - name: Download artifact
         uses: actions/download-artifact@main
         with:
