@@ -1,6 +1,6 @@
 
 #typing_word {
-    alignment: center;
+    text-align: center;
 }
 
 .txt-rotate {
@@ -19,12 +19,10 @@
     right: 0;
     opacity: 0.3;
     pointer-events: none;
-}
 
-#introduction {
-    box-shadow: 0 -1px 2px #272a2c;
+    width: 100%;
+    height: 100%;
 }
-
 
 #illus1 {
     position: relative;
@@ -37,7 +35,14 @@
 }
 
 #introduction {
-    padding-bottom: 120px;
+    box-shadow: 0 -1px 2px #272a2c;
+    min-height: 100vh;
+}
+
+@media screen and (max-height: 1080px) {
+    #introduction {
+        padding-bottom: 20px;
+    }
 }
 
 #down .common-section-paragraph {

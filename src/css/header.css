@@ -23,8 +23,8 @@
     margin-left: 3%;
     width: 9%;
     float: left;
-    alignment: center;
     pointer-events: none;
+    position: absolute;
 }
 
 nav {

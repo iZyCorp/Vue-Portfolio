@@ -22,7 +22,6 @@ body {
 
 /* SECTION */
 .big_text {
-    float: none;
     font-size: 35px;
     text-align: center;
     color: #e0dbda;
@@ -89,6 +88,8 @@ body {
     padding-bottom: 10px;
     background-color: #313436;
     display: block;
+
+    min-height: 100vh;
 }
 
 .common-section h1,
@@ -97,6 +98,7 @@ body {
 .common-section-2 p{
     color: #e0dbda;
 }
+
 
 .vertical-hr {
     border-left: 1px solid #e0dbda;
