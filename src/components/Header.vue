@@ -9,7 +9,6 @@
                     <router-link to="/projects" id="router-link">PROJETS</router-link>
                     <router-link to="/contact" id="router-link">CONTACT</router-link>
                     <a href="https://github.com/iZyCorp" id="router-link">GITHUB</a>
-                    <router-link to="/epreuve4" id="router-link">E4</router-link>
                 </ul>
             </nav>
         </section>
@@ -23,12 +22,8 @@
 
             <nav v-else-if="$route.path === '/projects'">
                 <a @click="scrollToSection('personal')" id="router-link">REALISATION PERSONNEL</a>
-                <a @click="scrollToSection('stage')" id="router-link">REALISATION EN STAGE</a>
+                <!--<a @click="scrollToSection('stage')" id="router-link">REALISATION EN STAGE</a>-->
                 <a @click="scrollToSection('stage-report')" id="router-link">RAPPORTS</a>
-            </nav>
-
-            <nav v-else-if="$route.path === '/epreuve4'">
-                <router-link to="/" id="router-link">ACCUEIL</router-link>
             </nav>
 
         </section>
