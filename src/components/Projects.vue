@@ -43,13 +43,13 @@
 
   <!-- MooN -->
     <section id="moon-project">
-      <h3 class="common-section-low-title" style="text-decoration: underline;">MOON</h3>
+      <h3 class="common-section-low-title" style="text-decoration: underline;">CALL OF DUTY JAVA API</h3>
         <div id="project-row">
 
           <section>
             <h4 class="common-section-low-title">INTRODUCTION</h4>
             <p class="common-section-paragraph" >
-              MooN est une library développé en <span style="color: #fa9e9e">Java</span>, il s'agit d'un wrapper de l'API officiel de Call Of Duty. Elle est actuellement encore en développement mais est déjà exploitable, les sources se trouvent sur Github.
+              J'ai réalisé une library développé en <span style="color: #fa9e9e">Java</span>, il s'agit d'un wrapper de l'API officiel de Call Of Duty. Elle est actuellement terminé et exploitable, les sources se trouvent sur Github.
             </p>
             <h4 class="common-section-low-title">FUTUR</h4>
             <p class="common-section-paragraph">
@@ -58,7 +58,7 @@
             </p>
           </section>
 
-      <img src="../assets/myprojects/MooN.png" alt="moon" id="illus-watermelon" class="unselectable" draggable="false">
+      <img src="../assets/myprojects/codlogo.png" alt="moon" id="illus-watermelon" class="unselectable" draggable="false">
     </div>
     </section>
 
@@ -67,31 +67,6 @@
   <!--
    STAGE
     -->
-  <section class="common-section-2" id="stage">
-
-    <p class="big_text">Projets en stage</p>
-
-    <!-- Chat -->
-    <section id="moon-project">
-      <h3 class="common-section-low-title" style="text-decoration: underline;">CHAT POUR EASY2DEV</h3>
-      <div id="project-row">
-
-        <section>
-          <h4 class="common-section-low-title">INTRODUCTION</h4>
-          <p class="common-section-paragraph" >
-            Dans le cadre de mon stage en 2eme année de BTS SIO, j'ai eu l'opportunité de réalisé en <span style="color: #e09efa">PhP</span>, un chat pour l'ERP de la société Easy2Dev.
-          </p>
-          <h4 class="common-section-low-title">OBJECTIFS ET FONCTIONNALITÉS</h4>
-          <p class="common-section-paragraph">
-           Ce chat à pour but d'aider l'entreprise à s'émanciper des autres outils de communication tel que Skype ou Teams. Il permet de discuter en temps réel avec les autres utilisateurs connecté à l'ERP, de partager des fichiers et de créer des salons de discussion.
-            Pour en savoir plus sur ce projet, rendez-vous sur mon <a href=""><span style="color: #89a969">rapport de stage</span></a>.
-          </p>
-        </section>
-
-        <img src="../assets/myprojects/chat.png" alt="moon" id="illus-watermelon" class="unselectable" draggable="false">
-      </div>
-    </section>
-  </section>
 
   <!--
   RAPPORT DE STAGE
